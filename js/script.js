@@ -1,5 +1,6 @@
 
 
+
 function initialize () {
     var mapCanvas = document.getElementById('map');
     var myLatLng = {lat: 53.893900, lng: 27.551298};
@@ -18,4 +19,11 @@ function initialize () {
 }
 google.maps.event.addDomListener(window, 'load', initialize);
 
+
+lightbox.option({
+  'resizeDuration': 200,
+  'wrapAround': true,
+  'showImageNumberLabel': false,
+  'fadeDuration': 100
+});
 
