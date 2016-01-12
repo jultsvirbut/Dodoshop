@@ -1,0 +1,55 @@
+
+.flexContainer {
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;	
+}
+
+main {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: stretch;
+	justify-content: space-between;
+	flex: 1;
+	margin-left: 40px; 
+	margin-right: 40px;
+	/*margin-top: 40px;
+	margin-bottom: 40px;*/
+}
+
+
+.flexTable {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	flex: 0 2 auto;
+	list-style: none;
+}
+
+.flexTable > li {
+	height: 200px;
+	width: 200px;
+	margin: 20px;
+}
+
+
+.description {
+	display: flex;
+	flex-direction: row;
+	flex: 1 1 auto;
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
+
+.desText {
+	margin: 10px;
+}
+
+.flexTable img:hover {
+  border: 2px solid #fff;
+
+}
+
+
+
+

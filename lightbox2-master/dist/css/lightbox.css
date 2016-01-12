@@ -167,10 +167,10 @@ body:after {
 }
 
 .lb-data .lb-details {
-  width: 85%;
-  float: left;
-  text-align: left;
-  line-height: 1.1em;
+  width: 100%;
+  float: center;
+  text-align: center;
+  line-height: 1.5em;
 }
 
 .lb-data .lb-caption {
@@ -188,7 +188,7 @@ body:after {
 }
 
 .lb-data .lb-close {
-  display: block;
+  display: none;
   float: right;
   width: 30px;
   height: 30px;

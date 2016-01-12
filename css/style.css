@@ -1,5 +1,7 @@
-
-/* Padding below the footer and lighter body text */
+body, ul, li, main, header, footer {
+  margin: 0;
+  padding: 0;
+}
 
 
 html {
@@ -16,7 +18,18 @@ body {
 }
 
 
+@font-face {
+    font-family: BebasNeueBook; /* Имя шрифта */
+    src: url(fonts/BebasNeueRegular.ttf); /* Путь к файлу со шрифтом */
+   }
 
+body {
+  font-family: BebasNeueBook;
+}
+#navbar {
+
+
+}
 /* Carousel base class */
 .carousel {
   height: 500px;
@@ -85,7 +98,7 @@ body {
   border-top: 1px solid #eee;
   padding-top: 32px;
   padding-top: 2rem;
-  margin-top: 32px;
+  margin-top: 40px;
   display: -webkit-flex;
   display: flex; 
   justify-content: space-between;
@@ -146,25 +159,21 @@ body {
 
 
 
-
-
-
-
 #map {
         width: 500px;
         height: 400px;
         background-color: #CCC;
-
      }
 
 .gallery {
   /*margin-left: 20%;
   margin-right: 20%;*/
- 
+  max-width: 100%;
+  display: flex;
 }
 
 .flexGallery {
-  
+  max-width: 100%;
   padding: 0;
   margin: 0;
 
@@ -177,12 +186,13 @@ body {
   display: flex;
   
   -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
   justify-content: center;
 
 }
 
 .flexGalleryItem {
-  padding: 5px;
+  margin: 20px;
   /*flex: 1 1 auto;*/
 }
 
@@ -211,15 +221,29 @@ body {
   .featurette-heading {
     font-size: 50px;
   }
+  
+  
 }
 
 @media (min-width: 992px) {
   .featurette-heading {
-    margin-top: 120px;
+    margin-top: 40px;
   }
+  .flexContainer main {
+	margin-left: 95px; 
+	margin-right: 95px;
+  }
+  
 }
 
-
+@media (max-width: 500px) {
+ 	
+	.flexContainer main {
+	margin-left: 10px; 
+	margin-right: 10px;
+  }
+  
+}
 @media all and (max-width: 500px) {
   
   .footer {
@@ -248,5 +272,9 @@ body {
   }    
   .footer .socialRound a {
     padding-left: 16px;
-    padding-left: 1rem; }
+    padding-left: 1rem; 
+	}
+	
+
+  
 }
